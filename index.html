@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Track Your Expenses</h1>
+    </header>
+    <main>
+        <form id="expense-form">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <label for="category">Category</label>
+            <select name="expense-categories" id="category">
+                <option value="None" selected>None</option>
+                <option value="Bills">Bills</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Travel">Travel</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+            <button type="submit" class="btn">Add Expense</button>
+        </form>
+        <ul id="expenses"></ul>
+    </main>
+    <script src="appFE.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
+</body>
+</html>
